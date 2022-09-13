@@ -1,0 +1,32 @@
+{
+  "name": "bangli-skatepark",
+  "version": "1.0.0",
+  "description": "PROJECT WEB PORTOFOLIO UNTUK BANGLI SKATEPARK",
+  "main": "index.js",
+  "scripts": {
+    "test": "bangli skatepark",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./css/index.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bangliskatepark/bangliskatepark.git"
+  },
+  "keywords": [
+    "bangli",
+    "skatepark"
+  ],
+  "author": "epenflow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bangliskatepark/bangliskatepark/issues"
+  },
+  "homepage": "https://github.com/bangliskatepark/bangliskatepark#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "@splidejs/splide": "^4.0.17",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3"
+  }
+}
