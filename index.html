@@ -27,10 +27,20 @@
   <body>
     <header class="relative flex items-center justify-center h-screen overflow-hidden flex-col flex-wrap" id="box">
       <div class="relative z-10 text-5xl font-semibold text-justify text-white capitalize" id="mytext">wait 1 second please!!!</div>
-      <video autoplay loop class="absolute w-auto min-w-full min-h-full max-w-none grayscale blur-sm">
+      <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none grayscale blur-sm" id="vid">
         <source src="assets/video/Bangli Skatepark (@bangliskatepark) • Instagram photos and videos.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <audio autoplay loop>
+        <source src="assets/audio/Bangli Skatepark (@bangliskatepark) • Instagram photos and videos.mp3" type="audio/mp3" />
+      </audio>
+      <script>
+        var player = videojs("#play");
+
+        player.ready(function () {
+          player.play();
+        });
+      </script>
       <!-- link -->
       <div class="relative z-10 text-5xl font-semibold text-justify text-white capitalize mt-10 hover:outline hover:border-l-8 hover:border-r-8 hover:text-red-600 hover:border-red-600 outline-offset-8" style="border-radius: 50%">
         <a href="https://linktr.ee/Bangliskatepark">social media</a>
