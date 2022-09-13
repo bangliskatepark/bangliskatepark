@@ -1,0 +1,55 @@
+     <!-- <div id="trigger"> -->
+ 
+ <!-- end header  -->
+
+    <!-- main content -->
+    <!-- <div id="trigger2">
+        <div class="h-screen p-5 flex flex-wrap align-middle justify-center">
+          <div class="text-center text-4xl uppercase font-medium mb-4 relative z-10">our journey</div>
+          <p class="relative z-10 text-white">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint omnis accusantium laboriosam dicta corporis saepe corrupti accusamus, molestiae doloribus impedit cupiditate eligendi necessitatibus nobis provident aperiam totam,
+            deserunt ratione labore. Recusandae sapiente molestias placeat reiciendis natus suscipit nobis! Beatae iure impedit deserunt dolorem cumque quibusdam vel temporibus hic labore expedita.
+          </p>
+          <div class="w-auto absolute mt-20">
+            <img src="assets/img/1.jpg" alt="" />
+          </div>
+        </div> -->
+    <!-- section -->
+    <!-- <div class="h-screen p-5 text-white flex flex-wrap align-middle justify-center translate-x-full -mt-40" id="box2"> -->
+    <!-- <div class="text-center text-4xl capitalize font-medium mb-4 relative z-10">our journey</div> -->
+    <!-- <p class="relative z-10">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint omnis accusantium laboriosam dicta corporis saepe corrupti accusamus, molestiae doloribus impedit cupiditate eligendi necessitatibus nobis provident aperiam totam,
+            deserunt ratione labore. Recusandae sapiente molestias placeat reiciendis natus suscipit nobis! Beatae iure impedit deserunt dolorem cumque quibusdam vel temporibus hic labore expedita.
+          </p> -->
+    <!-- <div class="w-auto absolute mt-20">
+            <img src="assets/img/264395041_134847285597476_5179878739391480156_n.jpg" alt="" />
+          </div>
+        </div>
+      </div> -->
+    <!-- end content -->
+    <!-- </div> -->
+    <!-- end scrol -->
+
+
+    
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#trigger",
+        start: "center bottom",
+        end: "center top",
+        scrub: true,
+        // markers: true,
+      },
+    });
+    tl.to("#box", { yPercent: 350, duration: 50 });
+    tl.to("#box", { rotation: 360, duration: 20 });
+    tl.to("#box", { xPercent: 350, duration: 10 });
+
+    const m = gsap.timeline({
+      scrollTrigger: "#trigger2",
+      start: "center bottom",
+      end: "center top",
+      scrub: true,
+      markers: true,
+    });
+    m.to("#box2", { xPercent: -100, duration: 10 });

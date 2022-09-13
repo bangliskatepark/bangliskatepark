@@ -25,66 +25,34 @@
     </style>
   </head>
   <body>
-    <!-- scroll -->
-    <div id="trigger">
-      <!--  header -->
-      <header class="relative flex items-center justify-center h-screen overflow-hidden flex-col flex-wrap" id="box">
-        <div class="relative z-10 text-5xl font-semibold text-justify text-white capitalize" id="mytext">wait 1 second please!!!</div>
-        <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none grayscale blur-sm">
-          <source src="assets/video/Bangli Skatepark (@bangliskatepark) • Instagram photos and videos.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <!-- link -->
-        <div class="relative z-10 text-5xl font-semibold text-justify text-white capitalize mt-10 hover:outline hover:border-l-8 hover:border-r-8 hover:text-red-600 hover:border-red-600 outline-offset-8" style="border-radius: 50%">
-          <a href="https://linktr.ee/Bangliskatepark">social media</a>
+    <header class="relative flex items-center justify-center h-screen overflow-hidden flex-col flex-wrap" id="box">
+      <div class="relative z-10 text-5xl font-semibold text-justify text-white capitalize" id="mytext">wait 1 second please!!!</div>
+      <video autoplay loop class="absolute w-auto min-w-full min-h-full max-w-none grayscale blur-sm">
+        <source src="assets/video/Bangli Skatepark (@bangliskatepark) • Instagram photos and videos.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <!-- link -->
+      <div class="relative z-10 text-5xl font-semibold text-justify text-white capitalize mt-10 hover:outline hover:border-l-8 hover:border-r-8 hover:text-red-600 hover:border-red-600 outline-offset-8" style="border-radius: 50%">
+        <a href="https://linktr.ee/Bangliskatepark">social media</a>
+      </div>
+      <!-- running text -->
+      <div class="mt-3 w-full h-auto relative">
+        <div class="text-5xl text-white w-full h-auto font-medium z-10 uppercase mb-1">
+          <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="left">bangli skatepark//2ʘ21©</marquee>
         </div>
-        <!-- running text -->
-        <div class="mt-3 w-full h-auto" id="box">
-          <div class="text-5xl text-white w-full h-auto font-medium z-10 uppercase">
-            <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="left">bangli skatepark//2ʘ21©</marquee>
-          </div>
-          <div class="text-5xl text-white w-full h-auto font-medium z-10 uppercase">
-            <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="right">bangli skatepark//2ʘ21©</marquee>
-          </div>
-          <div class="text-5xl text-white w-full h-auto font-medium z-10 uppercase">
-            <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="left">bangli skatepark//2ʘ21©</marquee>
-          </div>
-          <div class="text-5xl text-white w-full h-auto font-medium z-10 uppercase">
-            <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="right">bangli skatepark//2ʘ21©</marquee>
-          </div>
+        <div class="text-5xl text-white w-full h-auto font-medium z-10 uppercase mb-1">
+          <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="right">bangli skatepark//2ʘ21©</marquee>
         </div>
-
-        <!-- end link -->
-      </header>
-      <!-- end header  -->
-
-      <!-- main content -->
-      <div id="trigger2">
-        <div class="h-screen p-5 flex flex-wrap align-middle justify-center">
-          <div class="text-center text-4xl uppercase font-medium mb-4 relative z-10">our journey</div>
-          <p class="relative z-10 text-white">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint omnis accusantium laboriosam dicta corporis saepe corrupti accusamus, molestiae doloribus impedit cupiditate eligendi necessitatibus nobis provident aperiam totam,
-            deserunt ratione labore. Recusandae sapiente molestias placeat reiciendis natus suscipit nobis! Beatae iure impedit deserunt dolorem cumque quibusdam vel temporibus hic labore expedita.
-          </p>
-          <div class="w-auto absolute mt-20">
-            <img src="assets/img/1.jpg" alt="" />
-          </div>
+        <div class="text-5xl text-white w-full h-auto font-medium z-10 uppercase mb-1">
+          <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="left">bangli skatepark//2ʘ21©</marquee>
         </div>
-        <!-- section -->
-        <div class="h-screen p-5 text-white flex flex-wrap align-middle justify-center translate-x-full -mt-40" id="box2">
-          <!-- <div class="text-center text-4xl capitalize font-medium mb-4 relative z-10">our journey</div> -->
-          <!-- <p class="relative z-10">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint omnis accusantium laboriosam dicta corporis saepe corrupti accusamus, molestiae doloribus impedit cupiditate eligendi necessitatibus nobis provident aperiam totam,
-            deserunt ratione labore. Recusandae sapiente molestias placeat reiciendis natus suscipit nobis! Beatae iure impedit deserunt dolorem cumque quibusdam vel temporibus hic labore expedita.
-          </p> -->
-          <div class="w-auto absolute mt-20">
-            <img src="assets/img/264395041_134847285597476_5179878739391480156_n.jpg" alt="" />
-          </div>
+        <div class="text-5xl text-white w-full h-auto font-medium z-10 uppercase mb-1">
+          <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="right">bangli skatepark//2ʘ21©</marquee>
         </div>
       </div>
-      <!-- end content -->
-    </div>
-    <!-- end scrol -->
+
+      <!-- end link -->
+    </header>
   </body>
 
   <!-- script js -->
@@ -94,28 +62,6 @@
   <script>
     gsap.registerPlugin(TextPlugin);
     gsap.to("#mytext", { duration: 2, text: "welcome to bangli skatepark", delay: 1 });
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#trigger",
-        start: "center bottom",
-        end: "center top",
-        scrub: true,
-        // markers: true,
-      },
-    });
-    tl.to("#box", { yPercent: 350, duration: 50 });
-    tl.to("#box", { rotation: 360, duration: 20 });
-    tl.to("#box", { xPercent: 350, duration: 10 });
-
-    const m = gsap.timeline({
-      scrollTrigger: "#trigger2",
-      start: "center bottom",
-      end: "center top",
-      scrub: true,
-      markers: true,
-    });
-    m.to("#box2", { xPercent: -100, duration: 10 });
   </script>
   <!-- end script js -->
 </html>
